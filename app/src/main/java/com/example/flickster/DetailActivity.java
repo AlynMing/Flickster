@@ -36,10 +36,10 @@ public class DetailActivity extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        tvTitle.findViewById(R.id.tvTitle);
-        tvOverview.findViewById(R.id.tvOverview);
-        ratingBar.findViewById(R.id.ratingBar);
-        youTubePlayerView.findViewById(R.id.player);
+        tvTitle = findViewById(R.id.tvTitle);
+        tvOverview = findViewById(R.id.tvOverview);
+        ratingBar = findViewById(R.id.ratingBar);
+        youTubePlayerView = findViewById(R.id.player);
 
         Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
         tvTitle.setText(movie.getTitle());
