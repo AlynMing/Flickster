@@ -78,7 +78,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                 imageURL = movie.getPosterPath();
             }
 
-            Glide.with(context).load(imageURL).into(ivPoster);
+            Glide.with(context).load(imageURL).circleCrop().into(ivPoster);
 
             //1. register click listener on the whole container
             //2. on tap, navigate to a new activity
